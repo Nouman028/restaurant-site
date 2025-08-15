@@ -17,7 +17,7 @@ Price: $100 USD
 📩 Contact: muhammadnouman.1937@gmail.com
 
 ## 🔗 Live Demo
-[View Live Demo](https://yourusername.github.io/restaurant-template/)
+[View Live Demo](https://github.com/Nouman028/restaurant-site)
 
 ---
 

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="TastyBites — a modern, mobile-friendly restaurant website template." />
+  <title>TastyBites | Modern Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="https://fav.farm/🍽️">
+</head>
+<body>
+  <!-- ==================== Header & Navigation ==================== -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="logo" href="#top" aria-label="TastyBites Home">Tasty<span>Bites</span></a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <ul class="nav__menu" id="navMenu" role="menu">
+        <li role="none"><a role="menuitem" href="#about">About</a></li>
+        <li role="none"><a role="menuitem" href="#menu">Menu</a></li>
+        <li role="none"><a role="menuitem" href="#specials">Specials</a></li>
+        <li role="none"><a role="menuitem" href="#gallery">Gallery</a></li>
+        <li role="none"><a role="menuitem" href="#reviews">Reviews</a></li>
+        <li role="none"><a role="menuitem" class="btn btn--sm" href="#reservation">Book a Table</a></li>
+      </ul>
+    </nav>
+    <section class="hero container">
+      <div class="hero__content">
+        <h1>Savor the Flavor</h1>
+        <p>Fresh, seasonal dishes crafted with love. Dine in, takeaway, or order online.</p>
+        <div class="hero__cta">
+          <a href="#menu" class="btn">Explore Menu</a>
+          <a href="#reservation" class="btn btn--ghost">Reserve Now</a>
+        </div>
+        <ul class="badges" aria-label="restaurant highlights">
+          <li>Open Daily</li>
+          <li>Halal Certified</li>
+          <li>Free Wi‑Fi</li>
+        </ul>
+      </div>
+      <div class="hero__image" role="img" aria-label="Signature dish with herbs and spices"></div>
+    </section>
+  </header>
+
+  <!-- ==================== About ==================== -->
+  <section class="section about" id="about">
+    <div class="container grid grid--2">
+      <div>
+        <h2>About Us</h2>
+        <p>At TastyBites, we believe great food brings people together. Our chefs blend local ingredients with global flavors to create unforgettable meals.</p>
+        <p>Whether you're here for a casual lunch or a special celebration, our team will make it memorable.</p>
+        <a class="link" href="#reservation">Book your table →</a>
+      </div>
+      <div class="about__image" role="img" aria-label="Cozy restaurant interior"></div>
+    </div>
+  </section>
+
+  <!-- ==================== Menu ==================== -->
+  <section class="section menu" id="menu">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <div class="menu__filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="mains">Mains</button>
+        <button class="chip" data-filter="desserts">Desserts</button>
+        <button class="chip" data-filter="drinks">Drinks</button>
+      </div>
+      <div class="cards grid grid--3" id="menuGrid">
+        <!-- Menu Cards -->
+        <article class="card" data-category="mains">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop" alt="Grilled chicken with herbs">
+          <div class="card__body">
+            <h3>Herb Grilled Chicken</h3>
+            <p>Served with roasted vegetables and garlic butter.</p>
+            <div class="price">$12.90</div>
+          </div>
+        </article>
+        <article class="card" data-category="mains">
+          <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?q=80&w=1200&auto=format&fit=crop" alt="Classic beef burger with fries">
+          <div class="card__body">
+            <h3>Classic Angus Burger</h3>
+            <p>Cheddar, lettuce, tomato, and house sauce. Fries included.</p>
+            <div class="price">$10.50</div>
+          </div>
+        </article>
+        <article class="card" data-category="desserts">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?q=80&w=1200&auto=format&fit=crop" alt="Chocolate lava cake">
+          <div class="card__body">
+            <h3>Chocolate Lava Cake</h3>
+            <p>Warm, gooey center — served with vanilla ice cream.</p>
+            <div class="price">$6.20</div>
+          </div>
+        </article>
+        <article class="card" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1200&auto=format&fit=crop" alt="Iced latte">
+          <div class="card__body">
+            <h3>Iced Latte</h3>
+            <p>Freshly pulled espresso over cold milk and ice.</p>
+            <div class="price">$3.90</div>
+          </div>
+        </article>
+        <article class="card" data-category="mains">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop" alt="Spaghetti bolognese">
+          <div class="card__body">
+            <h3>Spaghetti Bolognese</h3>
+            <p>Slow-cooked beef ragu, parmesan, and basil.</p>
+            <div class="price">$11.40</div>
+          </div>
+        </article>
+        <article class="card" data-category="desserts">
+          <img src="https://images.unsplash.com/photo-1488477304112-4944851de03d?q=80&w=1200&auto=format&fit=crop" alt="Assorted pastries">
+          <div class="card__body">
+            <h3>French Pastry Box</h3>
+            <p>Chef’s selection of 3 mini pastries.</p>
+            <div class="price">$5.80</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Specials / Promo Banner ==================== -->
+  <section class="section specials" id="specials" aria-label="weekly specials">
+    <div class="container specials__wrap">
+      <div>
+        <h2>Weekday Lunch Special</h2>
+        <p>Any main + drink for only <strong>$13.90</strong> from 11am–3pm.</p>
+      </div>
+      <a href="#reservation" class="btn btn--light">Book Now</a>
+    </div>
+  </section>
+
+  <!-- ==================== Gallery ==================== -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="masonry" id="galleryGrid" aria-live="polite">
+        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" alt="Dining area with sunlight">
+        <img src="https://images.unsplash.com/photo-1452960962994-acf2f79f1f85?q=80&w=1200&auto=format&fit=crop" alt="Chef plating dish">
+        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?q=80&w=1200&auto=format&fit=crop" alt="Table setting with wine">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop" alt="Pizza from oven">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop" alt="Bar counter">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Reviews ==================== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <h2>What Customers Say</h2>
+      <div class="carousel" id="reviewCarousel" aria-roledescription="carousel">
+        <figure class="slide active">
+          <blockquote>“The best dining experience I've had all year. Flavor-packed and beautifully plated!”</blockquote>
+          <figcaption>— Aisha R.</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote>“Cozy ambiance, friendly staff, and the desserts are heavenly.”</blockquote>
+          <figcaption>— Daniel K.</figcaption>
+        </figure>
+        <figure class="slide">
+          <blockquote>“Perfect spot for family dinner. Kids loved the pizza!”</blockquote>
+          <figcaption>— Nurul A.</figcaption>
+        </figure>
+      </div>
+      <div class="carousel__controls">
+        <button class="btn btn--light" id="prevReview" aria-label="Previous review">‹</button>
+        <button class="btn btn--light" id="nextReview" aria-label="Next review">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Reservation ==================== -->
+  <section class="section reservation" id="reservation">
+    <div class="container grid grid--2">
+      <div>
+        <h2>Book a Table</h2>
+        <p>Reserve your seat in seconds. We’ll confirm by email.</p>
+        <form id="reservationForm" novalidate>
+          <div class="form__row">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="John Doe" required>
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form__row">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+            <small class="error" data-for="date"></small>
+          </div>
+          <div class="form__row">
+            <label for="time">Time</label>
+            <input id="time" name="time" type="time" required>
+            <small class="error" data-for="time"></small>
+          </div>
+          <div class="form__row">
+            <label for="guests">Guests</label>
+            <input id="guests" name="guests" type="number" min="1" max="20" value="2" required>
+            <small class="error" data-for="guests"></small>
+          </div>
+          <button class="btn" type="submit">Submit Reservation</button>
+          <p class="form__note">No payment required. We’ll email you a confirmation.</p>
+        </form>
+      </div>
+      <div class="reservation__image" role="img" aria-label="Reserved table with candles"></div>
+    </div>
+  </section>
+
+  <!-- ==================== Contact & Footer ==================== -->
+  <section class="section contact" id="contact">
+    <div class="container grid grid--2">
+      <div>
+        <h2>Contact</h2>
+        <p><strong>Address:</strong> 123 Riverside Road, Kuala Lumpur</p>
+        <p><strong>Phone:</strong> +60 12-345 6789</p>
+        <p><strong>Email:</strong> hello@tastybites.com</p>
+        <p><strong>Hours:</strong> Mon–Sun, 10:00–22:00</p>
+        <div class="map__embed">
+          <iframe title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=101.66%2C3.12%2C101.72%2C3.16&layer=mapnik" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div>
+        <h2>Newsletter</h2>
+        <p>Get promos, new menu alerts, and events in your inbox.</p>
+        <form id="newsletterForm" novalidate>
+          <div class="form__row inline">
+            <label class="sr-only" for="newsletterEmail">Email</label>
+            <input id="newsletterEmail" type="email" placeholder="you@example.com" required>
+            <button class="btn" type="submit">Subscribe</button>
+          </div>
+          <small class="error" data-for="newsletterEmail"></small>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <a class="logo" href="#top">Tasty<span>Bites</span></a>
+      <ul class="footer__links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> TastyBites. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scrolltop" id="scrollTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+🍽️ TastyBites Restaurant Template
+
+Premium HTML/CSS/JavaScript restaurant website template – perfect for cafes, diners, food trucks, and restaurants.
+
+🌟 Features
+- Fully responsive design (mobile-friendly)
+- Smooth animations
+- Menu showcase with images
+- Contact form section
+- Easy to customize
+
+💰 Purchase & License
+This template is NOT free.  
+You must purchase a license before using it for personal or commercial purposes.
+
+Price: $100 USD  
+📩 Contact: muhammadnouman.1937@gmail.com
+
+## 🔗 Live Demo
+[View Live Demo](https://yourusername.github.io/restaurant-template/)
+
+---
+
+© 2025 Muhammad Nouman. All Rights Reserved.
